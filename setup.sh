@@ -24,7 +24,7 @@ fi
 if [ ! -f "ae.safetensors" ]; then
     wget --show-progress https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors?download=true -O ae.safetensors
 fi
-if [ ! -f "XPlus_base.safetensors" ]; then
+if [ ! -f "xplus2_base.safetensors" ]; then
     wget --header="Authorization: Bearer $HF_TOKEN" https://huggingface.co/Copax/XPlus_base_1/resolve/main/XPlus_2_fp16_full.safetensors?download=true -O xplus2_base.safetensors
 fi
 cd ..
